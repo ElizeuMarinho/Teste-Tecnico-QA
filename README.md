@@ -127,8 +127,6 @@ Os cenários automatizados que envolvem a API em suas condições de sucesso, ga
 
 ## 4. Testes de API
 
-Descreva:
-
 - endpoints cobertos
 
 A API é organizada em endpoints para realização de login, visualização do carrinho, aplicação de cupom, fechamento de pedido e retorno de pedido. Dessa forma, é possível acompanhar o fluxo completo de ponta a ponta no processo de compra.
@@ -153,8 +151,6 @@ Também é necessário impedir a realização de pedidos sem autenticação e at
 Além disso, devem ser consideradas as validações de contrato, que envolvem o uso de códigos HTTP condizentes com cada tipo de erro, a definição de campos obrigatórios no payload, a validação da estrutura dos dados e a padronização das respostas da API.
 
 ## 5. Automação
-
-Se optar por automatizar:
 
 - diga por que escolheu esses cenários
 
@@ -268,9 +264,9 @@ Descreva:
 
 - hipóteses principais
 
-H1 - O cupom é válido no sistema e atende às regras de negócio?
-H2 - A API de aplicação de cupom está funcionando corretamente em todos os cenários?
-H3 - O cálculo de finalização de compra está sendo executado corretamente e de forma consistente entre carrinho e pedido?
+### H1 - O cupom é válido no sistema e atende às regras de negócio?
+### H2 - A API de aplicação de cupom está funcionando corretamente em todos os cenários?
+### H3 - O cálculo de finalização de compra está sendo executado corretamente e de forma consistente entre carrinho e pedido?
 
 - passos de investigação
 
@@ -292,8 +288,6 @@ Além disso, é importante alinhar com o time de desenvolvimento padrões de qua
 
 ## 7. Uso de IA
 
-Explique brevemente:
-
 - quais ferramentas usou
 
 ChatGPT
@@ -308,8 +302,6 @@ Foi elaborado um prompt estruturado com base nas informações fornecidas da API
 Esse processo teve como objetivo garantir uma cobertura mais eficiente dos cenários de teste, bem como a consistência e qualidade da implementação automatizada.
 
 ## 8. Complemento Técnico
-
-Responda `2` dos `3` itens:
 
 - análise do trecho `PHP`
 
@@ -329,4 +321,3 @@ SELECT o.user_id, o.cart_id, o.total, ct.total FROM orders o
     WHERE o.total = ct.total;
 ```
 
-- proposta de regressão em `GitHub Actions`
