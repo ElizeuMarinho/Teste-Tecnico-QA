@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "user_id": 4821,
+      "email": "qa.candidate@anestesiacarioca.com",
+      "password": "123456"
+    }
+  ],
+  "cart": {
+    "cart_id": 9912,
+    "items": [
+      {
+        "sku": "ANEST-001",
+        "name": "Serviço A",
+        "quantity": 1,
+        "unit_price": 250
+      }
+    ],
+    "subtotal": 250,
+    "shipping": 20,
+    "total_without_coupon": 270
+  },
+  "coupons": [
+    {
+      "code": "BEMVINDO10",
+      "type": "percentage",
+      "value": 10,
+      "active": true,
+      "expires_at": "2026-12-31T23:59:59Z"
+    },
+    {
+      "code": "FIXO30",
+      "type": "fixed",
+      "value": 30,
+      "active": true,
+      "expires_at": "2026-12-31T23:59:59Z"
+    },
+    {
+      "code": "EXPIRADO15",
+      "type": "percentage",
+      "value": 15,
+      "active": true,
+      "expires_at": "2024-12-31T23:59:59Z"
+    },
+    {
+      "code": "INATIVO20",
+      "type": "percentage",
+      "value": 20,
+      "active": false,
+      "expires_at": "2026-12-31T23:59:59Z"
+    },
+    {
+      "code": "FIXO999",
+      "type": "fixed",
+      "value": 999,
+      "active": true,
+      "expires_at": "2026-12-31T23:59:59Z"
+    }
+  ]
+}
